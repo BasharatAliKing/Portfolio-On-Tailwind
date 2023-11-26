@@ -7,7 +7,7 @@ export default function ContactComp() {
        <section className=''>
         <div className='contact flex flex-col md:flex-row  container py-16 font-saira'>
         <div className='md:w-1/2 flex flex-col gap-5' >
-          <h1 className='text-2xl md:text-5xl font-bold text-red border-4 border-l-red border-t-0 border-r-0 border-b-0 px-3'>Contact</h1>
+          <h1 className='text-2xl px-1 md:text-5xl font-bold text-red border-4 border-l-red border-t-0 border-r-0 border-b-0 md:px-3'>Contact</h1>
           <p className='text-sm md:text-lg font-normal text-gray-700'>Got a Project in mind? Need to Collaaborate or Bounce Ideas.</p>
           <h2 className='uppercase text-md md:text-2xl font-semibold  text-btn'>Hit Up Me!</h2>
           <p className='text-sm md:text-lg font-normal text-gray-700'>Just Click On the Method Button You want to Contact Me.</p>

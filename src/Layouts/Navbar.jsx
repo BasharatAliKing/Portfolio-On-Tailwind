@@ -2,9 +2,19 @@ import React, { useState } from 'react';
 import {Link} from "react-router-dom";
 import { BsWhatsapp } from "react-icons/bs";
 import { IoMenu } from "react-icons/io5";
+import Button from '../Components/Button';
 export default function Navbar() {
+  let Links=[ 
+    {name:"Home", link:"/Home"},
+    {name:"About", link:"/About"},
+    {name:"Portfolio", link:"/Portfolio"},
+    {name:"Work", link:"/Work"},
+    {name:"Contact", link:"/Contact"},
+]
+      
+  
   const [Navbar,setNavbar]=useState(true);
-  const [BtnNavbar,setBtnNavbar]=useState(false);
+  const [Open,setOpen]=useState(false);
   const showButton=()=>{
     console.log("Scrolled...");
     if(window.scrollY > 490){
@@ -15,27 +25,25 @@ export default function Navbar() {
     }
   }
   window.addEventListener('scroll',showButton);
-  const handleClick = (e)=>{
-    e.preventDefault();
-    console.log(e.name);
-    
-
-  }
+  
   return (
     <>
     <div className={Navbar ? "active" :" navbars"}>
       <nav  className=' text-white  z-10 w-full'>
-        <div className='container flex items-center'>
+        <div className='container flex flex-col md:flex-row items-center justify-between'>
         <div className="logo"><img src={process.env.PUBLIC_URL+"./logo.png"} className='w-[30%]' alt="my-pic" /></div>
-        <ul className=' gap-x-10 mx-auto hidden md:flex'> 
-            <li><Link className='text-xl font-saira font-medium hover:text-red hover:animate-pulse' to="/Home">Home</Link></li>
-            <li><Link className='text-xl font-saira font-medium hover:text-red hover:animate-pulse' to="/Portfolio">Portfolio</Link></li>
-            <li><Link className='text-xl font-saira font-medium hover:text-red hover:animate-pulse' to="/Work">Work</Link></li>
-            <li><Link className='text-xl font-saira font-medium hover:text-red hover:animate-pulse' to="/About">About</Link></li>
-            <li><Link className='text-xl font-saira font-medium hover:text-red hover:animate-pulse' to="/Contact">Contact</Link></li>
-        </ul>
-        <a href="https://Wa.me/923036939413" className='flex items-center hidden md:flex  bg-btn py-2 px-3 text-lg font-saira font-medium rounded-md animate-bounce btn' ><BsWhatsapp className='mr-1' />Contact me</a>
-        <IoMenu className=' ml-auto text-xl md:hidden' onClick={()=>{}}/>
+        <div className='text-xl absolute md:hidden right-8 top-6' onClick={()=>{setOpen(!Open)}}>
+        <ion-icon name={Open ? "close":"menu"}></ion-icon>
+        </div>
+         <ul className={`md:flex items-start bg-yellow-400 w-full md:items-center absolute md:z-auto z-50  left-0 md:w-auto md:static top-20 ${ Open ? 'top-20 opacity-100' : 'top-[-500px]'} `} > 
+            {Links.map((link)=>(
+              <li key={link.name} className='ml-8 text-xl hover:duration-500 hover:text-red font-saira font-semibold'>
+                <a href={link.link} >{link.name}</a></li>
+            ))} 
+            <Button btnname="Contact me"/>
+            </ul>
+      
+        
        </div>
     </nav>
     </div>
