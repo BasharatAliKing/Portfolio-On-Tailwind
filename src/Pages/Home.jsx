@@ -34,7 +34,7 @@ export default function Home() {
           </div>
             <p className='text-sm md:text-lg font-medium font-saira'>Website Developer</p>
             <div className="flex flex-col mt-5 md:flex-row gap-2 md:mt-7 items-start md:items-center">
-              <a href="/" className=' px-7 py-2 text-sm md:px-3 md:py-2 md:text-md btn font-saira font-bold rounded-lg uppercase'>View my Work</a>
+              <a href="/Work" className=' px-7 py-2 text-sm md:px-3 md:py-2 md:text-md btn font-saira font-bold rounded-lg uppercase'>View my Work</a>
               <a href={resume} className=' px-3 py-2 text-sm md:px-3 md:py-2 md:text-md btn font-saira font-bold rounded-lg uppercase' download="Resume" >Download resume</a>
             </div>
 

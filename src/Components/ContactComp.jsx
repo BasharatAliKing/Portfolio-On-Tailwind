@@ -1,7 +1,17 @@
-import React from 'react'
+import React, { useState } from 'react'
 import PhoneInput from 'react-phone-input-2'
 import 'react-phone-input-2/lib/style.css'
+import { ToastContainer, toast } from 'react-toastify';
+import 'react-toastify/dist/ReactToastify.css';
 export default function ContactComp() {
+  const notify = () => toast("Form Submitted!");
+  const [form,setform]=useState({
+    fname:"",
+    lname:"",
+    email:"",
+    phone:"",
+    description:""
+  });
   return (
     <>
        <section className=''>
@@ -20,16 +30,16 @@ export default function ContactComp() {
           </div>
         </div>
         <div className='flex flex-col mt-10 md:mt-0 md:w-1/2 md:mx-10 my-auto'>
-            <form action="" className='shadow p-7 rounded-xl flex flex-col gap-3'>
+            <form action="" className='shadow p-7 rounded-xl flex flex-col gap-3' >
               <h2 className='text-lg md:text-2xl text-btn font-medium'>Fill out the form and we'll be in touch ASAP.</h2>
               <div className='flex flex-col md:flex-row gap-2'>
-                <input type="text" className='mt-1 px-3 py-2 bg-white border shadow-sm border-slate-300 placeholder-slate-400 focus:outline-none focus:border-sky-500 focus:ring-sky-500 block w-full rounded-md sm:text-sm focus:ring-1' placeholder='First Name' />
-                <input type="text" className='mt-1 px-3 py-2 bg-white border shadow-sm border-slate-300 placeholder-slate-400 focus:outline-none focus:border-sky-500 focus:ring-sky-500 block w-full rounded-md sm:text-sm focus:ring-1' placeholder='Last Name' />
+                <input type="text" name='fname'   className='mt-1 px-3 py-2 bg-white border shadow-sm border-slate-300 placeholder-slate-400 focus:outline-none focus:border-sky-500 focus:ring-sky-500 block w-full rounded-md sm:text-sm focus:ring-1' placeholder='First Name' />
+                <input type="text" name='lname' className='mt-1 px-3 py-2 bg-white border shadow-sm border-slate-300 placeholder-slate-400 focus:outline-none focus:border-sky-500 focus:ring-sky-500 block w-full rounded-md sm:text-sm focus:ring-1' placeholder='Last Name' />
               </div>
-              <input type="email" className='mt-1 px-3 py-2 bg-white border shadow-sm border-slate-300 placeholder-slate-400 focus:outline-none focus:border-sky-500 focus:ring-sky-500 block w-full rounded-md sm:text-sm focus:ring-1' placeholder='Email Address' />
-              <PhoneInput  country={'us'} />
-              <textarea name="" className='mt-1 px-3 py-2 bg-white border shadow-sm border-slate-300 placeholder-slate-400 focus:outline-none focus:border-sky-500 focus:ring-sky-500 block w-full rounded-md sm:text-sm focus:ring-1' placeholder='Tell us more About your Projects..' id="" cols="30" rows="5"></textarea>
-              <button className='btn p-1 text-white rounded-sm font-medium text-sm'>Submit Query</button>
+              <input type="email" name='email' className='mt-1 px-3 py-2 bg-white border shadow-sm border-slate-300 placeholder-slate-400 focus:outline-none focus:border-sky-500 focus:ring-sky-500 block w-full rounded-md sm:text-sm focus:ring-1' placeholder='Email Address' />
+              <PhoneInput name='phone' country={'us'} />
+              <textarea name="description"  className='mt-1 px-3 py-2 bg-white border shadow-sm border-slate-300 placeholder-slate-400 focus:outline-none focus:border-sky-500 focus:ring-sky-500 block w-full rounded-md sm:text-sm focus:ring-1' placeholder='Tell us more About your Projects..' id="" cols="30" rows="5"></textarea>
+              <button className='btn p-1 text-white rounded-sm font-medium text-sm' onClick={notify} >Submit Query</button>
             </form>
         </div>
         </div>

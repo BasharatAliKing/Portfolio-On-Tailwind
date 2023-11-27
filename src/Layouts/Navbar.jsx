@@ -2,7 +2,6 @@ import React, { useState } from 'react';
 import {Link} from "react-router-dom";
 import { BsWhatsapp } from "react-icons/bs";
 import { IoMenu } from "react-icons/io5";
-import Button from '../Components/Button';
 export default function Navbar() {
   let Links=[ 
     {name:"Home", link:"/Home"},
@@ -40,7 +39,7 @@ export default function Navbar() {
               <li key={link.name} className='ml-8 mt-3 md:mt-0 text-xl hover:duration-500 hover:text-red font-saira font-semibold'>
                 <a href={link.link} >{link.name}</a></li>
             ))} 
-            <Button btnname="Contact me"/>
+            <a  href='https://Wa.me/923036939413' className='flex items-center bg-red text-md px-3 py-2 rounded-lg ml-8 gap-1 btn font-saira font-bold'><BsWhatsapp /> Contact me</a>
             </ul>
       
         
