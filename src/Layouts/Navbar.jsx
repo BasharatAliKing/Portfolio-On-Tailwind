@@ -31,7 +31,7 @@ export default function Navbar() {
     <div className={Navbar ? "active" :" navbars"}>
       <nav  className=' text-white  z-10 w-full'>
         <div className='container flex flex-col md:flex-row items-start md:items-center justify-between'>
-        <div className="logo w-[25%]"><img src={process.env.PUBLIC_URL+"./logo.png"} className='' alt="my-pic" /></div>
+        <div className="logo w-[25%] md:w-[8%]"><img src={process.env.PUBLIC_URL+"./logo.png"} className='' alt="my-pic" /></div>
         <div className='text-2xl absolute md:hidden right-6 top-7' onClick={()=>{setOpen(!Open)}}>
         <ion-icon name={Open ? "close":"menu"}></ion-icon>
         </div>

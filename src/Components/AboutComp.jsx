@@ -14,11 +14,11 @@ export default function AboutComp() {
       </div>
       <h2 className='text-xl md:w-1/2 font-medium md:text-3xl text-btn'>Here i will discuss some web development processes.</h2>
       <div className='grid grid-cols-3 md:grid-cols-9 '>
-        <div className="text-gray-700 font-semibold text-base md:text-xl after:content-['*'] after:ml-0.5 after:text-red  ">Concept</div>
-        <div className="text-gray-700 font-semibold text-base md:text-xl after:content-['*'] after:ml-0.5 after:text-red  ">Design</div>
-        <div className="text-gray-700 font-semibold text-base md:text-xl after:content-['*'] after:ml-0.5 after:text-red  ">Coding</div>
-        <div className="text-gray-700 font-semibold text-base md:text-xl after:content-['*'] after:ml-0.5 after:text-red  ">Testing</div>
-        <div className="text-gray-700 font-semibold text-base md:text-xl after:content-['*'] after:ml-0.5 after:text-red  ">Launching</div>
+        <div className="text-gray-700 font-normal text-base md:text-xl after:content-['*'] after:ml-0.5 after:text-red  ">Concept</div>
+        <div className="text-gray-700 font-normal text-base md:text-xl after:content-['*'] after:ml-0.5 after:text-red  ">Design</div>
+        <div className="text-gray-700 font-normal text-base md:text-xl after:content-['*'] after:ml-0.5 after:text-red  ">Coding</div>
+        <div className="text-gray-700 font-normal text-base md:text-xl after:content-['*'] after:ml-0.5 after:text-red  ">Testing</div>
+        <div className="text-gray-700 font-normal text-base md:text-xl after:content-['*'] after:ml-0.5 after:text-red  ">Launching</div>
       </div>
       <h3 className='text-xl md:text-2xl font-semibold text-btn'>Tools | Work with</h3>
       <div className='grid grid-cols-3 gap-4 md:grid-cols-12'>
@@ -26,6 +26,7 @@ export default function AboutComp() {
          <img className='w-16 h-16'  src={process.env.PUBLIC_URL+"./html.png"} alt="" />
          <img className='w-16 h-16'  src={process.env.PUBLIC_URL+"./css.png"} alt="" />
          <img className='w-16 h-16'  src={process.env.PUBLIC_URL+"./js.png"} alt="" />
+         <img className='w-16 h-16'  src={process.env.PUBLIC_URL+"./logo192.png"} alt="" />
          <img className='w-16 h-16'  src={process.env.PUBLIC_URL+"./bootstrap.png"} alt="" />
          <img className='w-16 h-16'  src={process.env.PUBLIC_URL+"./tailwind.png"} alt="" />
          <img className='w-16 h-16'  src={process.env.PUBLIC_URL+"./nodejs.png"} alt="" />
