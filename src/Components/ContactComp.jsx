@@ -5,7 +5,7 @@ export default function ContactComp() {
   return (
     <>
        <section className=''>
-        <div className='contact flex flex-col md:flex-row  container py-16 font-saira'>
+        <div className='contact flex flex-col md:flex-row  container py-10 md:py-16 font-saira'>
         <div className='md:w-1/2 flex flex-col gap-5' >
           <h1 className='text-2xl px-1 md:text-5xl font-bold text-red border-4 border-l-red border-t-0 border-r-0 border-b-0 md:px-3'>Contact</h1>
           <p className='text-sm md:text-lg font-normal text-gray-700'>Got a Project in mind? Need to Collaaborate or Bounce Ideas.</p>
