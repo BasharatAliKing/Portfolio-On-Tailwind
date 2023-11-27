@@ -13,7 +13,7 @@ export default function Home() {
         <div className='container flex flex-col items-center py-10 justify-center w-full md:flex-row md:h-screen  '>
           <div className='flex flex-col text-white gap-y-1 mt-24 sm:mt-28 md:mt-0  md:h-auto w-screen  md:gap-y-3  px-4 md:w-1/2'>
             <h4 className='text-sm md:text-base lg:text-xl font-medium font-saira'>Hey, I Am</h4>
-          <div className='flex flex-col items-start sm:flex-row md:flex-col lg:flex-row lg:gap-2'>
+          <div className='flex flex-col items-start sm:flex-row md:flex-col xl:flex-row lg:gap-2'>
             <div className='full-main '>Hey folks,</div>
           <TypeAnimation className='full-main'
               sequence={[

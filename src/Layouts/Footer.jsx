@@ -10,7 +10,7 @@ export default function Footer() {
   return (
     <>
     <section className='bg-footerbg bg-btn text-gray-200 font-saira '>
- <div className='container grid gap-10 py-10 md:gap-0 grid-cols-1 sm:grid-cols-2  md:grid md:grid-cols-4 md:py-16 ' > 
+ <div className='container grid gap-10 py-10 md:gap-0 grid-cols-1 sm:grid-cols-2 md:grid-cols-3  md:grid lg:grid-cols-4 md:py-16 ' > 
         <div className='bg-black p-5 rounded-lg'>
             <img src={process.env.PUBLIC_URL+"./logo.png"} alt="My-Pic" className='w-[20%] sm:w-[20%]' />
             <hr className='my-3'/>
@@ -35,7 +35,7 @@ export default function Footer() {
               
             </ul>
         </div>
-        <div className='md:px-10'>
+        <div className='md:px-10 md:mt-5 lg:mt-0 '>
             <h1 className='text-lg font-medium'>Follow Us</h1>
             <div className='flex gap-2 md:gap-3 mt-3'>
                <div className='flex flex-row sm:flex-col gap-2'>
