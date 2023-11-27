@@ -1,18 +1,17 @@
-import React, { useState } from 'react'
+import React from 'react'
 import PhoneInput from 'react-phone-input-2'
 import 'react-phone-input-2/lib/style.css'
 import { ToastContainer, toast } from 'react-toastify';
 import 'react-toastify/dist/ReactToastify.css';
 export default function ContactComp() {
   const notify = () => toast("Form Submitted!");
-  const [form,setform]=useState({
-    fname:"",
-    lname:"",
-    email:"",
-    phone:"",
-    description:""
-  });
-  
+  // const [form,setform]=useState({
+  //   fname:"",
+  //   lname:"",
+  //   email:"",
+  //   phone:"",
+  //   description:""
+  // });
   return (
     <>
        <section className=''>
