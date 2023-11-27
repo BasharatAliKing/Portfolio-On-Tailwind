@@ -9,7 +9,7 @@ import { FaWhatsapp } from "react-icons/fa";
 export default function Footer() {
   return (
     <>
-    <section className='bg-footerbg bg-btn text-gray-200 font-saira '>
+    <section className='bg-footerbg bg-no-repeat bg-cover bg-btn text-gray-200 font-saira '>
  <div className='container grid gap-10 py-10 md:gap-0 grid-cols-1 sm:grid-cols-2 md:grid-cols-3  md:grid lg:grid-cols-4 md:py-16 ' > 
         <div className='bg-black p-5 rounded-lg'>
             <img src={process.env.PUBLIC_URL+"./logo.png"} alt="My-Pic" className='w-[20%] sm:w-[20%]' />
