@@ -10,7 +10,7 @@ export default function Home() {
   return (
     <>
       <div className=' bg-bgimgall  bg-no-repeat bg-cover top-0'>
-        <div className='container flex flex-col md:flex-row items-center justify-center h-[150vh] md:h-screen w-full '>
+        <div className='container flex flex-col md:flex-row items-center justify-center h-[120vh] md:h-screen w-full '>
           <div className='flex flex-col text-white gap-y-3 w-screen p-4 md:w-1/2'>
             <h4 className='text-sm md:text-xl font-medium font-saira'>Hey, I Am</h4>
           <div className='flex flex-col items-start md:items-center sm:flex-row md:gap-2'>
