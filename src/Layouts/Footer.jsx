@@ -37,7 +37,7 @@ export default function Footer() {
         </div>
         <div className='md:px-10'>
             <h1 className='text-lg font-medium'>Follow Us</h1>
-            <div className='flex gap-3 mt-3'>
+            <div className='flex gap-2 md:gap-3 mt-3'>
                <div className='flex flex-row md:flex-col gap-2'>
                <a href="https://Wa.me/923036939413" ><FaWhatsapp className='text-3xl text-white bg-green-700 rounded-full p-2' /></a>
                 <a href="https://www.facebook.com/profile.php?id=100080969177729&mibextid=ZbWKwL"><FaFacebookF className='text-3xl text-white bg-blue-900 rounded-full p-2' /></a>
