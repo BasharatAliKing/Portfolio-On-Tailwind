@@ -10,9 +10,9 @@ export default function Footer() {
   return (
     <>
     <section className='bg-footerbg bg-btn text-gray-200 font-saira '>
- <div className='container grid gap-10 py-10 md:gap-0 grid-cols-1  md:grid md:grid-cols-4 md:py-16 ' > 
+ <div className='container grid gap-10 py-10 md:gap-0 grid-cols-1 sm:grid-cols-2  md:grid md:grid-cols-4 md:py-16 ' > 
         <div className='bg-black p-5 rounded-lg'>
-            <img src={process.env.PUBLIC_URL+"./logo.png"} alt="My-Pic" width="30%" />
+            <img src={process.env.PUBLIC_URL+"./logo.png"} alt="My-Pic" className='w-[20%] sm:w-[20%]' />
             <hr className='my-3'/>
             <p className='text-sm py-4'>Lorem ipsum dolor sit amet consectetur adipisicing elit. Corporis eius ab, iste ipsam perferendis quaerat accusantium ut debitis saepe at.</p>
         </div>
@@ -38,16 +38,16 @@ export default function Footer() {
         <div className='md:px-10'>
             <h1 className='text-lg font-medium'>Follow Us</h1>
             <div className='flex gap-2 md:gap-3 mt-3'>
-               <div className='flex flex-row md:flex-col gap-2'>
+               <div className='flex flex-row sm:flex-col gap-2'>
                <a href="https://Wa.me/923036939413" ><FaWhatsapp className='text-3xl text-white bg-green-700 rounded-full p-2' /></a>
                 <a href="https://www.facebook.com/profile.php?id=100080969177729&mibextid=ZbWKwL"><FaFacebookF className='text-3xl text-white bg-blue-900 rounded-full p-2' /></a>
                
                </div>
-             <div className='flex flex-row md:flex-col gap-2'>   
+             <div className='flex flex-row sm:flex-col gap-2'>   
              <a href="https://twitter.com/Bashara84911062?t=OpULgNmkh3QkEfe0Jq4HRQ&s=09"><FaTwitter className='text-3xl text-white bg-blue-400 rounded-full p-2' /></a>
                 <a href="/"><FaGoogle className='text-3xl text-white bg-orange-500 rounded-full p-2' /></a>
                 </div>
-                <div className='flex flex-row md:flex-col gap-2'><a href="https://www.instagram.com/bdking141/"><FaInstagram className='text-3xl text-white bg-purple-500 rounded-full p-2' /></a>
+                <div className='flex flex-row sm:flex-col gap-2'><a href="https://www.instagram.com/bdking141/"><FaInstagram className='text-3xl text-white bg-purple-500 rounded-full p-2' /></a>
                 <a href="https://www.linkedin.com/in/basharat-ali-0a5131208"><FaLinkedinIn className='text-3xl text-white bg-blue-600 rounded-full p-2' /></a></div>
             </div>
         </div>

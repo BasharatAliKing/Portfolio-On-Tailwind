@@ -11,9 +11,9 @@ export default function Home() {
     <>
       <div className=' bg-bgimgall  bg-no-repeat bg-cover top-0'>
         <div className='container flex flex-col items-center py-10 justify-center w-full md:flex-row md:h-screen  '>
-          <div className='flex flex-col text-white gap-y-1 mt-24 md:mt-0  md:h-auto w-screen  md:gap-y-3  px-4 md:w-1/2'>
-            <h4 className='text-sm md:text-xl font-medium font-saira'>Hey, I Am</h4>
-          <div className='flex flex-col items-start md:items-center sm:flex-row md:gap-2'>
+          <div className='flex flex-col text-white gap-y-1 mt-24 sm:mt-28 md:mt-0  md:h-auto w-screen  md:gap-y-3  px-4 md:w-1/2'>
+            <h4 className='text-sm md:text-base lg:text-xl font-medium font-saira'>Hey, I Am</h4>
+          <div className='flex flex-col items-start sm:flex-row md:flex-col lg:flex-row lg:gap-2'>
             <div className='full-main '>Hey folks,</div>
           <TypeAnimation className='full-main'
               sequence={[
@@ -32,10 +32,10 @@ export default function Home() {
               repeat={Infinity}
             />
           </div>
-            <p className='text-sm md:text-lg font-medium font-saira'>Website Developer</p>
-            <div className="flex flex-col mt-5 md:flex-row gap-2 md:mt-7 items-start md:items-center">
-              <a href="/Work" className=' px-7 py-2 text-sm md:px-3 md:py-2 md:text-md btn font-saira font-bold rounded-lg uppercase'>View my Work</a>
-              <a href={resume} className=' px-3 py-2 text-sm md:px-3 md:py-2 md:text-md btn font-saira font-bold rounded-lg uppercase' download="Resume" >Download resume</a>
+            <p className='text-sm md:text-base lg:text-lg font-medium font-saira'>Website Developer</p>
+            <div className="flex flex-col mt-5 sm:flex-row gap-2 lg:mt-7 items-start md:items-center">
+              <a href="/Work" className=' px-7 py-2 text-sm  md:px-3 md:py-2 lg:text-md btn font-saira font-bold rounded-lg uppercase'>View my Work</a>
+              <a href={resume} className=' px-3 py-2 text-sm md:px-3 md:py-2 lg:text-md btn font-saira font-bold rounded-lg uppercase' download="Resume" >Download resume</a>
             </div>
 
           </div>

@@ -5,9 +5,9 @@ export default function WorkComp() {
     <>
         <section className=' bg-workbg font-saira'>
           <div className='container flex flex-col gap-3 py-10 md:py-16'>
-             <h1 className='text-2xl md:text-5xl px-1 font-bold text-red border-4 border-l-red border-t-0 border-r-0 border-b-0 md:px-3'>Work</h1>
-        <p className='text-sm md:text-xl font-normal text-gray-700'>A Cross sectoin off my recent projects and works so please just Click on to check it.</p>
-         <div className='grid grid-cols-1 md:grid-cols-4 gap-5 mt-5'>
+             <h1 className='text-2xl md:text-3xl lg:text-5xl px-1 md:px-2 font-bold text-red border-4 border-l-red border-t-0 border-r-0 border-b-0 lg:px-3'>Work</h1>
+        <p className='text-sm md:text-base lg:text-xl font-normal text-gray-700'>A Cross sectoin off my recent projects and works so please just Click on to check it.</p>
+         <div className='grid grid-cols-1 sm:grid-cols-2 md:grid-cols-4 gap-5 mt-5'>
           <a href="/"><img src={process.env.PUBLIC_URL+"./fyp.jpg"} alt="My-Pic" /></a>
           <a href="/"><img src={process.env.PUBLIC_URL+"./tesla.jpg"} alt="My-Pic" /></a>
           <a href="/"><img src={process.env.PUBLIC_URL+"./pocketcoin.jpg"} alt="My-Pic" /></a>
