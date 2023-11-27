@@ -39,7 +39,7 @@ export default function Home() {
             </div>
 
           </div>
-          <div className=' md:w-1/2 md:h-auto flex justify-center mt-10 md:mt-0'><img src={process.env.PUBLIC_URL + "./me.jpg"} className='border-8 rounded-tl-3xl rounded-br-3xl border-red w-[70%] md:w-[50%]' width="50%" alt="my-pic" /></div>
+          <div className=' md:w-1/2 md:h-auto flex justify-center mt-10 md:mt-0'><img src={process.env.PUBLIC_URL + "./user.jpg"} className='border-8 rounded-tl-3xl rounded-br-3xl border-red w-[70%] md:w-[50%]' width="50%" alt="my-pic" /></div>
         </div>
       </div>
       {/* Work section start here */}
