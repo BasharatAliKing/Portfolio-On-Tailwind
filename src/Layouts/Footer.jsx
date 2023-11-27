@@ -10,7 +10,7 @@ export default function Footer() {
   return (
     <>
     <section className='bg-footerbg bg-btn text-gray-200 font-saira '>
- <div className='container grid gap-10 md:gap-0 grid-cols-1  md:grid md:grid-cols-4 py-16 ' > 
+ <div className='container grid gap-10 py-10 md:gap-0 grid-cols-1  md:grid md:grid-cols-4 md:py-16 ' > 
         <div className='bg-black p-5 rounded-lg'>
             <img src={process.env.PUBLIC_URL+"./logo.png"} alt="My-Pic" width="30%" />
             <hr className='my-3'/>

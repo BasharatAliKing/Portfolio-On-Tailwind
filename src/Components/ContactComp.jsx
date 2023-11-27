@@ -5,7 +5,7 @@ export default function ContactComp() {
   return (
     <>
        <section className=''>
-        <div className='contact flex flex-col md:flex-row  container py-10 md:py-16 font-saira'>
+        <div className='contact flex flex-col md:flex-row  container pt-0  py-10 md:py-16 font-saira'>
         <div className='md:w-1/2 flex flex-col gap-5' >
           <h1 className='text-2xl px-1 md:text-5xl font-bold text-red border-4 border-l-red border-t-0 border-r-0 border-b-0 md:px-3'>Contact</h1>
           <p className='text-sm md:text-lg font-normal text-gray-700'>Got a Project in mind? Need to Collaaborate or Bounce Ideas.</p>
@@ -19,7 +19,7 @@ export default function ContactComp() {
             <a href='https://www.instagram.com/bdking141/' className='flex items-center text-base md:text-xl font-medium text-gray-700'> <img className='mr-2' src={process.env.PUBLIC_URL + "./instagram.png"} alt="" /> Instagram</a>
           </div>
         </div>
-        <div className='flex flex-col md:w-1/2 md:mx-10 my-auto'>
+        <div className='flex flex-col mt-10 md:mt-0 md:w-1/2 md:mx-10 my-auto'>
             <form action="" className='shadow p-7 rounded-xl flex flex-col gap-3'>
               <h2 className='text-lg md:text-2xl text-btn font-medium'>Fill out the form and we'll be in touch ASAP.</h2>
               <div className='flex flex-col md:flex-row gap-2'>
