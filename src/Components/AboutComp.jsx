@@ -21,7 +21,7 @@ export default function AboutComp() {
         <div className="text-gray-700 font-normal text-base md:text-lg lg:text-xl after:content-['*'] after:ml-0.5 after:text-red  ">Launching</div>
       </div>
       <h3 className='text-xl md:text-xl lg:text-2xl font-semibold text-btn'>Tools | Work with</h3>
-      <div className='grid grid-cols-3 gap-4 md:grid-cols-6 lg:grid-cols-12'>
+      <div className='grid grid-cols-4 gap-4 md:grid-cols-6 lg:grid-cols-12'>
          <img className='w-16 h-16'  src={process.env.PUBLIC_URL+"./vscode.png"} alt="" />
          <img className='w-16 h-16'  src={process.env.PUBLIC_URL+"./html.png"} alt="" />
          <img className='w-16 h-16'  src={process.env.PUBLIC_URL+"./css.png"} alt="" />
