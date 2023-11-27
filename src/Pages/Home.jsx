@@ -4,8 +4,8 @@ import { TypeAnimation } from 'react-type-animation';
 import AboutComp from '../Components/AboutComp';
 import resume from "../BasharatAli-CV.pdf";
 import ContactComp from '../Components/ContactComp';
+import {Link} from "react-router-dom";
 import Footer from '../Layouts/Footer';
-
 export default function Home() {
   return (
     <>
@@ -34,7 +34,7 @@ export default function Home() {
           </div>
             <p className='text-sm md:text-base lg:text-lg font-medium font-saira'>Website Developer</p>
             <div className="flex flex-col mt-5 sm:flex-row gap-2 lg:mt-7 items-start md:items-center">
-              <a href="/Work" className=' px-7 py-2 text-sm  md:px-3 md:py-2 lg:text-md btn font-saira font-bold rounded-lg uppercase'>View my Work</a>
+              <Link to="/Work" className=' px-7 py-2 text-sm  md:px-3 md:py-2 lg:text-md btn font-saira font-bold rounded-lg uppercase'>View my Work</Link>
               <a href={resume} className=' px-3 py-2 text-sm md:px-3 md:py-2 lg:text-md btn font-saira font-bold rounded-lg uppercase' download="Resume" >Download resume</a>
             </div>
 
