@@ -3,7 +3,7 @@ import React from 'react'
 export default function AboutComp() {
   return (
     <>
-      <section className='container flex  flex-col gap-9 py-10 md:py-16 font-saira'>
+      <section className='container flex  flex-col gap-4 md:gap-9 py-10 md:py-16 font-saira'>
         <h1 className='text-2xl md:text-5xl px-1 font-bold text-red border-4 border-l-red border-t-0 border-r-0 border-b-0 md:px-3'>About Me</h1>
       <div className='flex flex-col md:flex-row '>
       <div className='text-sm md:w-1/2  md:text-xl font-normal text-gray-700'>
@@ -14,11 +14,11 @@ export default function AboutComp() {
       </div>
       <h2 className='text-xl md:w-1/2 font-medium md:text-3xl text-btn'>Here i will discuss some web development processes.</h2>
       <div className='grid grid-cols-3 md:grid-cols-9 '>
-        <div className="text-gray-700 font-semibold text-base md:text-xl after:content-['*'] after:ml-0.5 after:text-red-500  ">Concept</div>
-        <div className="text-gray-700 font-semibold text-base md:text-xl after:content-['*'] after:ml-0.5 after:text-red-500  ">Design</div>
-        <div className="text-gray-700 font-semibold text-base md:text-xl after:content-['*'] after:ml-0.5 after:text-red-500  ">Coding</div>
-        <div className="text-gray-700 font-semibold text-base md:text-xl after:content-['*'] after:ml-0.5 after:text-red-500  ">Testing</div>
-        <div className="text-gray-700 font-semibold text-base md:text-xl after:content-['*'] after:ml-0.5 after:text-red-500  ">Launching</div>
+        <div className="text-gray-700 font-semibold text-base md:text-xl after:content-['*'] after:ml-0.5 after:text-red  ">Concept</div>
+        <div className="text-gray-700 font-semibold text-base md:text-xl after:content-['*'] after:ml-0.5 after:text-red  ">Design</div>
+        <div className="text-gray-700 font-semibold text-base md:text-xl after:content-['*'] after:ml-0.5 after:text-red  ">Coding</div>
+        <div className="text-gray-700 font-semibold text-base md:text-xl after:content-['*'] after:ml-0.5 after:text-red  ">Testing</div>
+        <div className="text-gray-700 font-semibold text-base md:text-xl after:content-['*'] after:ml-0.5 after:text-red  ">Launching</div>
       </div>
       <h3 className='text-xl md:text-2xl font-semibold text-btn'>Tools | Work with</h3>
       <div className='grid grid-cols-3 gap-4 md:grid-cols-12'>
