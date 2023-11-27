@@ -37,7 +37,7 @@ export default function Navbar() {
          <ul className={`md:flex items-start bg-black md:bg-transparent w-full md:items-center absolute md:z-auto z-50  left-0 md:w-auto md:static top-16 transition-all duration-300 ease-in py-10 md:py-0 ${ Open ? 'top-20 opacity-100' : 'top-[-500px]'} `} > 
             {Links.map((link)=>(
               <li key={link.name} className='ml-8 mt-3 md:mt-0 text-base  md:text-lg  2xl:text-xl hover:duration-500 hover:text-red font-saira font-semibold'>
-                <a href={link.link} >{link.name}</a></li>
+                <Link to={link.link} >{link.name}</Link></li>
             ))} 
             <a  href='https://Wa.me/923036939413' className='flex items-center   bg-red text-base xl:text-lg px-3 py-2 mt-3 md:mt-0  rounded-lg ml-8  btn font-saira font-bold'><BsWhatsapp /> Contact me</a>
             </ul>
