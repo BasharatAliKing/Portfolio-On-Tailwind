@@ -57,9 +57,9 @@ export default function Footer() {
     <div className='bg-black'>
  <div className='container flex flex-col md:flex-row py-2 text-center  text-gray-200'>
         
-        <div className='text-sm font-normal cursor-pointer  px-2'>Copyright &copy; basharatalidogar14@gmail.com All Right Reversed!
+        <div className='text-xs md:text-sm font-normal cursor-pointer  px-2'>Copyright &copy; basharatalidogar14@gmail.com All Right Reversed!
         </div>
-        <div className='md:ml-auto text-sm cursor-pointer'> Designed by B.D king</div>
+        <div className='md:ml-auto text-xs md:text-sm cursor-pointer'> Designed by B.D king</div>
       </div>
     </div>
     
