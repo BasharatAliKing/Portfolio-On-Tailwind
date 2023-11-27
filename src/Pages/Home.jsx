@@ -34,12 +34,12 @@ export default function Home() {
           </div>
             <p className='text-sm md:text-lg font-medium font-saira'>Website Developer</p>
             <div className="flex flex-col mt-5 md:flex-row gap-2 md:mt-7 items-start md:items-center">
-              <a href="/" className=' px-8 py-2 text-sm md:px-3 md:py-2 md:text-md btn font-saira font-bold rounded-lg uppercase'>View my Work</a>
+              <a href="/" className=' px-7 py-2 text-sm md:px-3 md:py-2 md:text-md btn font-saira font-bold rounded-lg uppercase'>View my Work</a>
               <a href={resume} className=' px-3 py-2 text-sm md:px-3 md:py-2 md:text-md btn font-saira font-bold rounded-lg uppercase' download="Resume" >Download resume</a>
             </div>
 
           </div>
-          <div className='md:w-1/2 flex justify-center mt-10 md:mt-0'><img src={process.env.PUBLIC_URL + "./me.jpg"} className='border-8 rounded-tl-3xl rounded-br-3xl border-red' width="50%" alt="my-pic" /></div>
+          <div className='md:w-1/2 flex justify-center mt-10 md:mt-0'><img src={process.env.PUBLIC_URL + "./me.jpg"} className='border-8 rounded-tl-3xl rounded-br-3xl border-red w-[70%] md:w-[50%]' width="50%" alt="my-pic" /></div>
         </div>
       </div>
       {/* Work section start here */}
