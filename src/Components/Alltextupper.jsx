@@ -3,7 +3,7 @@ import React from 'react'
 export default function Alltextupper(props) {
   return (
     <>
-       <div className='container flex flex-col h-[80vh] tex-white  justify-center'>
+       <div className='container flex flex-col h-[60vh] mb-10 md:h-[80vh] tex-white  justify-center'>
            <h1 className='main-heading font-saira'>{props.mainheading}</h1>
            <ul>
             <li className='flex gap-5 items-center'>
