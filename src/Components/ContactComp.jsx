@@ -5,17 +5,25 @@ import { ToastContainer, toast } from 'react-toastify';
 import 'react-toastify/dist/ReactToastify.css';
 export default function ContactComp() {
   
-  const [form,setform]=useState({
-    fname:"",
-    lname:"",
-    email:"",
-    phone:"",
-    description:""
-  });
+  // const [form,setform]=useState({
+  //   fname:"",
+  //   lname:"",
+  //   email:"",
+  //   phone:"",
+  //   description:""
+  // });
+  const [fname,setFname]=useState();
+  const [lname,setLname]=useState();
+  const [email,setEmail]=useState();
+  const [description,setDescription]=useState();
   const handleSubmit=(e)=>{
     e.preventDefault();
      toast("Your Responce is Submitted!");
-        console.log(form);
+     console.log(fname,lname,email,description);
+     setFname("");
+     setLname("");
+     setEmail("");
+     setDescription("");
   }
   return (
     <>
@@ -38,12 +46,12 @@ export default function ContactComp() {
             <div  className='shadow p-7 rounded-xl flex flex-col gap-3'  >
               <h2 className='text-lg md:text-2xl text-btn font-medium'>Fill out the form and we'll be in touch ASAP.</h2>
               <div className='flex flex-col md:flex-row gap-2'>
-                <input type="text" name='fname' onChange={(e)=>{setform({fname:e.target.value})}}  className='mt-1 px-3 py-2 bg-white border shadow-sm border-slate-300 placeholder-slate-400 focus:outline-none focus:border-sky-500 focus:ring-sky-500 block w-full rounded-md sm:text-sm focus:ring-1' placeholder='First Name' />
-                <input type="text" name='lname' onChange={(e)=>{setform({lname:e.target.value})}} className='mt-1 px-3 py-2 bg-white border shadow-sm border-slate-300 placeholder-slate-400 focus:outline-none focus:border-sky-500 focus:ring-sky-500 block w-full rounded-md sm:text-sm focus:ring-1' placeholder='Last Name' />
+                <input type="text" name='fname' value={fname} onChange={(e)=>{setFname(e.target.value)}}  className='mt-1 px-3 py-2 bg-white border shadow-sm border-slate-300 placeholder-slate-400 focus:outline-none focus:border-sky-500 focus:ring-sky-500 block w-full rounded-md sm:text-sm focus:ring-1' placeholder='First Name' />
+                <input type="text" name='lname' value={lname} onChange={(e)=>{setLname(e.target.value)}} className='mt-1 px-3 py-2 bg-white border shadow-sm border-slate-300 placeholder-slate-400 focus:outline-none focus:border-sky-500 focus:ring-sky-500 block w-full rounded-md sm:text-sm focus:ring-1' placeholder='Last Name' />
               </div>
-              <input type="email" name='email' onChange={(e)=>{setform({email:e.target.value})}}  className='mt-1 px-3 py-2 bg-white border shadow-sm border-slate-300 placeholder-slate-400 focus:outline-none focus:border-sky-500 focus:ring-sky-500 block w-full rounded-md sm:text-sm focus:ring-1' placeholder='Email Address' />
-              <PhoneInput name='phone' onChange={(e)=>{setform({phone:e.target.value})}} country={'us'} />
-              <textarea name="description" onChange={(e)=>{setform({description:e.target.value})}}  className='mt-1 px-3 py-2 bg-white border shadow-sm border-slate-300 placeholder-slate-400 focus:outline-none focus:border-sky-500 focus:ring-sky-500 block w-full rounded-md sm:text-sm focus:ring-1' placeholder='Tell us more About your Projects..' id="" cols="30" rows="5"></textarea>
+              <input type="email" name='email' value={email} onChange={(e)=>{setEmail(e.target.value)}}  className='mt-1 px-3 py-2 bg-white border shadow-sm border-slate-300 placeholder-slate-400 focus:outline-none focus:border-sky-500 focus:ring-sky-500 block w-full rounded-md sm:text-sm focus:ring-1' placeholder='Email Address' />
+              <PhoneInput name='phone'  country={'us'} />
+              <textarea name="description" value={description} onChange={(e)=>{setDescription(e.target.value)}}  className='mt-1 px-3 py-2 bg-white border shadow-sm border-slate-300 placeholder-slate-400 focus:outline-none focus:border-sky-500 focus:ring-sky-500 block w-full rounded-md sm:text-sm focus:ring-1' placeholder='Tell us more About your Projects..' id="" cols="30" rows="5"></textarea>
               <button className='btn p-1 text-white rounded-sm font-medium text-sm' onClick={handleSubmit} >Submit Query</button>
             </div>
         </div>

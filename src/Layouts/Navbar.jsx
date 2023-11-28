@@ -24,7 +24,6 @@ export default function Navbar() {
     }
   }
   window.addEventListener('scroll',showButton);
-  
   return (
     <>
     <div className={Navbar ? "active" :" navbars"}>
