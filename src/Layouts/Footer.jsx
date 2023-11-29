@@ -6,6 +6,7 @@ import { FaGoogle } from "react-icons/fa";
 import { FaInstagram } from "react-icons/fa";
 import { FaLinkedinIn } from "react-icons/fa6";
 import { FaWhatsapp } from "react-icons/fa";
+import {Link} from "react-router-dom";
 export default function Footer() {
   return (
     <>
@@ -20,7 +21,7 @@ export default function Footer() {
             <h1 className='text-lg font-medium'>Explore</h1>
             <ul className='flex flex-col gap-2'>
                 <Link to="/Home" className='flex items-center text-sm hover:text-red'><IoIosArrowForward className='mr-0 text-red ' />Home</Link>
-                <Link to="/Contact" className='flex items-center text-sm hover:text-red'><IoIosArrowForward className='mr-0 text-red ' />Work</L>
+                <Link to="/Contact" className='flex items-center text-sm hover:text-red'><IoIosArrowForward className='mr-0 text-red ' />Work</Link>
                 <Link to="/Contact" className='flex items-center text-sm hover:text-red'><IoIosArrowForward className='mr-0 text-red ' />Portfolio</Link>
                 <Link to="/About" className='flex items-center text-sm hover:text-red'><IoIosArrowForward className='mr-0 text-red ' />About</Link>
                 <Link to="/Contact" className='flex items-center text-sm hover:text-red'><IoIosArrowForward className='mr-0 text-red ' />Contact</Link>
