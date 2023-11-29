@@ -19,11 +19,11 @@ export default function Footer() {
         <div className='flex flex-col gap-3 md:px-10 md:items-center '>
             <h1 className='text-lg font-medium'>Explore</h1>
             <ul className='flex flex-col gap-2'>
-                <a href="/Home" className='flex items-center text-sm hover:text-red'><IoIosArrowForward className='mr-0 text-red ' />Home</a>
-                <a href="/Contact" className='flex items-center text-sm hover:text-red'><IoIosArrowForward className='mr-0 text-red ' />Work</a>
-                <a href="/Contact" className='flex items-center text-sm hover:text-red'><IoIosArrowForward className='mr-0 text-red ' />Portfolio</a>
-                <a href="/About" className='flex items-center text-sm hover:text-red'><IoIosArrowForward className='mr-0 text-red ' />About</a>
-                <a href="/Contact" className='flex items-center text-sm hover:text-red'><IoIosArrowForward className='mr-0 text-red ' />Contact</a>
+                <Link to="/Home" className='flex items-center text-sm hover:text-red'><IoIosArrowForward className='mr-0 text-red ' />Home</Link>
+                <Link to="/Contact" className='flex items-center text-sm hover:text-red'><IoIosArrowForward className='mr-0 text-red ' />Work</L>
+                <Link to="/Contact" className='flex items-center text-sm hover:text-red'><IoIosArrowForward className='mr-0 text-red ' />Portfolio</Link>
+                <Link to="/About" className='flex items-center text-sm hover:text-red'><IoIosArrowForward className='mr-0 text-red ' />About</Link>
+                <Link to="/Contact" className='flex items-center text-sm hover:text-red'><IoIosArrowForward className='mr-0 text-red ' />Contact</Link>
             </ul>
         </div>
         <div className='flex flex-col gap-3 md:px-10 '>
