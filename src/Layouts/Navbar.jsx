@@ -38,7 +38,7 @@ export default function Navbar() {
               <li key={link.name} className='ml-8 mt-3 md:mt-0 text-base  md:text-lg  2xl:text-xl hover:duration-500 hover:text-red font-saira font-semibold'>
                 <Link to={link.link} onClick={()=>{setOpen(false)}}>{link.name}</Link></li>
             ))} 
-            <Link  to='https://Wa.me/923036939413' className=' items-center hidden md:flex  bg-red text-base xl:text-lg px-3 py-2 mt-3 md:mt-0  rounded-lg ml-8  btn font-saira font-bold'><BsWhatsapp /> Contact me</Link>
+            <Link  to='https://Wa.me/923036939413' className=' items-center hidden md:flex  bg-red text-base xl:text-lg px-3 py-2 mt-3 md:mt-0  rounded-lg ml-8  btn font-saira font-bold'><BsWhatsapp className='mr-1 ' /> Contact me</Link>
             </ul>
       
         
